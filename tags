@@ -1,0 +1,24 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/3fdf28bc/
+CC	Makefile	/^CC=g++$/;"	m
+LIBS	Makefile	/^LIBS=$/;"	m
+SOURCE	Makefile	/^SOURCE=*.cpp$/;"	m
+TARGET	Makefile	/^TARGET=-o main$/;"	m
+VENDINGMACHINE_HPP	vendingmachine.hpp	/^#define VENDINGMACHINE_HPP$/;"	d
+VendingMachine	vendingmachine.cpp	/^VendingMachine::VendingMachine(int q, int d, int n, int v, bool c) {$/;"	f	class:VendingMachine
+VendingMachine	vendingmachine.hpp	/^class VendingMachine {$/;"	c
+all	Makefile	/^all:$/;"	t
+change	vendingmachine.hpp	/^		bool change;$/;"	m	class:VendingMachine	typeref:typename:bool
+delta	vendingmachine.cpp	/^void VendingMachine::delta(string input) {$/;"	f	class:VendingMachine	typeref:typename:void
+dimes	vendingmachine.hpp	/^		int dimes;$/;"	m	class:VendingMachine	typeref:typename:int
+getChange	vendingmachine.cpp	/^string VendingMachine::getChange(int v) {$/;"	f	class:VendingMachine	typeref:typename:string
+lambda	vendingmachine.cpp	/^string VendingMachine::lambda() {$/;"	f	class:VendingMachine	typeref:typename:string
+main	hw2.cpp	/^int main() {$/;"	f	typeref:typename:int
+nickels	vendingmachine.hpp	/^		int nickels;$/;"	m	class:VendingMachine	typeref:typename:int
+quarters	vendingmachine.hpp	/^		int quarters;$/;"	m	class:VendingMachine	typeref:typename:int
+value	vendingmachine.hpp	/^		int value;$/;"	m	class:VendingMachine	typeref:typename:int
