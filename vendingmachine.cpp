@@ -13,11 +13,10 @@ string VendingMachine::lambda() {
 
 	if(change) {
 		ret += getChange(value % 100);
-		ret += " ";
 	}
 
 	for(int i = 0; i < value / 100; i++) {
-		ret += "coffee ";
+		ret += "<coffee>";
 	}
 
 	if(ret.compare("") == 0) {
@@ -66,6 +65,9 @@ void VendingMachine::delta(string input) {
 			nickels++;
 			value += 5;
 		}
+		else if(*c == 'c') {
+			change = true;
+		}
 	}
 }
 
@@ -77,7 +79,7 @@ string VendingMachine::getChange(int v) {
 	int n = ((v-q*25)-d*10) / 5 > nickels ? nickels : ((v-q*25)-d*10) / 5;
 
 	if(q*25 + d*10 + n*5 != v) {
-		return "Not enough change in machine";
+		throw "Not enough change in machine";
 	}
 
 	for(int i = 0; i < q; i++) {
