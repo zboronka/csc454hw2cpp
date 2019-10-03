@@ -6,7 +6,9 @@ using namespace std;
 
 int main() {
 	VendingMachine * vm = new VendingMachine(0, 0, 0, 0, false);
-	for(string command; command != "exit"; cin >> command) {
+
+	string command;
+	for(cin >> command; command != "exit"; cin >> command) {
 		try {
 			cout << vm->lambda() << endl;
 			vm->delta(command);
