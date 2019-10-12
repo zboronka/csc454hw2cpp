@@ -16,7 +16,7 @@ string VendingMachine::lambda() {
 	}
 
 	for(int i = 0; i < value / 100; i++) {
-		ret += "\u001b[48;5;52m\u001b[37m≼coffee≽\u001b[39;49m";
+		ret += "\u001b[48;5;52m\u001b[37m<coffee>\u001b[39;49;m";
 	}
 
 	if(ret.compare("") == 0) {
