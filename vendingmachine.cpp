@@ -16,11 +16,11 @@ string VendingMachine::lambda() {
 	}
 
 	for(int i = 0; i < value / 100; i++) {
-		ret += "<coffee>";
+		ret += "\u001b[48;5;52m\u001b[37m≼coffee≽\u001b[39;49m";
 	}
 
 	if(ret.compare("") == 0) {
-		ret = "nothing";
+		ret = "\u001b[48;5;196m\u001b[37mnothing\u001b[39;49m";
 	}
 
 	return ret;
@@ -83,13 +83,13 @@ string VendingMachine::getChange(int v) {
 	}
 
 	for(int i = 0; i < q; i++) {
-		ret += "q";
+		ret += "\u001b[48;5;220m\u001b[30mq\u001b[39;49m";
 	}
 	for(int i = 0; i < d; i++) {
-		ret += "d";
+		ret += "\u001b[48;5;249m\u001b[30md\u001b[39;49m";
 	}
 	for(int i = 0; i < n; i++) {
-		ret += "n";
+		ret += "\u001b[48;5;202m\u001b[30mn\u001b[39;49m";
 	}
 
 	return ret;
